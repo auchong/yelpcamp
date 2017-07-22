@@ -18,7 +18,8 @@ var commentRoutes = require("./routes/comments"),
     
    
 //create yelpcamp db in mongodb
-mongoose.connect("mongodb://localhost/yelp_camp");
+// mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://austin:abc123@ds159998.mlab.com:59998/auchong_yelpcamp");
 //js to call body parser package - used to parse variables from post request
 app.use(bodyParser.urlencoded({extended: true}));
 //used so ejs is not required after file names
